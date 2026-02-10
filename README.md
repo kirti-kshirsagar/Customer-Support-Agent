@@ -2,7 +2,7 @@
 
 This project is a simple customer support AI Agent for **Thoughtful AI**. It answers common questions about Thoughtful AI’s agents (EVA, CAM, PHIL, etc.) from a **hardcoded FAQ**, and falls back to a **generic LLM** (OpenAI) for everything else.
 
-It is implemented in **Python** with a **Streamlit** chat UI and is designed to demonstrate practical applied‑AI skills.
+It is implemented in Python with a Streamlit chat UI and is designed to demonstrate practical applied‑AI skills.
 
 ---
 
@@ -29,7 +29,7 @@ It is implemented in **Python** with a **Streamlit** chat UI and is designed to 
 ## Project Structure
 
 ```text
-thoughtful-ai-agent/
+Customer-Support-Agent/
 ├─ app.py          # Main Streamlit app 
 ├─ faq_data.py     # Hardcoded FAQ dataset
 ├─ requirements.txt
@@ -85,11 +85,16 @@ If no FAQ entry passes the threshold:
     - The actual answer text.
     - A small source note indicating FAQ vs. LLM.
 
+<img width="706" height="489" alt="Screenshot 2026-02-10 at 2 21 08 PM" src="https://github.com/user-attachments/assets/0f6234aa-42ac-4941-9b06-55964081f9ae" />
+
+<img width="720" height="482" alt="Screenshot 2026-02-10 at 2 21 32 PM" src="https://github.com/user-attachments/assets/b35576e2-8969-4112-a774-a776ab5bacd7" />
+
+
 ## Design Choices
 - **No LangChain / Chroma / FAISS**: For a 5‑item FAQ, a manual similarity function is clearer and easier to reason about than adding multiple heavy dependencies. It keeps the focus on applied AI integration rather than framework plumbing.
 - **Explicit Fallback Logic**: The code clearly separates:
     - FAQ retrieval (retrieve_best_faq)
-    - LLM fallback (ca  ll_llm_fallback)
+    - LLM fallback (call_llm_fallback)
 
     This matches the assignment’s requirement of “use predefined dataset, fallback to generic LLM responses for everything else.”
 ​
