@@ -101,7 +101,7 @@ If no FAQ entry passes the threshold:
 - **LLM-Optional**: The app still behaves sensibly without an API key, which makes it easy to run or demo in environments where secrets are not available.
 
 ## Extending the Project
-Possible extensions (if you want to show more depth):
+Possible extensions:
 
 - Swap bag‑of‑words for embeddings (e.g.: sentence-transformers) and cosine similarity for more robust matching.
 
