@@ -42,7 +42,7 @@ Customer-Support-Agent/
 
 `pip install -r requirements.txt`
 
-3. Set the env variable in .env file, add you key:
+3. Set the env variable in .env file, add your llm key:
 
 `OPENAI_API_KEY=sk-your-real-key-here`
 
